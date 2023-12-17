@@ -2,7 +2,7 @@
  session_start();  
  if(isset($_SESSION["user"]))  
  {  
-      header("location:home.php");  
+      header("location:/admin/home.php");  
  }  
  
  ?>
@@ -80,7 +80,7 @@
          
          $_SESSION['user'] = $myusername;
          
-         header("location: home.php");
+         header("location:/admin/home.php");
       }else {
          echo '<script>alert("Your Login Name or Password is invalid") </script>' ;
       }
